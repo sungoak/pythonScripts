@@ -40,10 +40,9 @@ def find_mode(inarray):
     return sorted_inarray.pop(mode_idx)
 
 def find_3_5_mulitple_sum(num,fact1=3,fact2=5):
-    list1000=range(1000)
-    divisible_3_5=[q if (q%3==0) or (q%5==0) else 0 for q in list1000]
+    list1000=range(num)
+    divisible_3_5=[q if (q%fact1==0) or (q%fact2==0) else 0 for q in list1000]
     return sum(divisible_3_5)
-
 
 
 
